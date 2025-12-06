@@ -36,8 +36,8 @@ app.use(function(req, res, next) {
 });
 
 //Start our server and tests!
-const PORT = process.env.PORT || 3000
-app.listen(PORT, function () {
+const PORT = process.env.PORT || 5000
+app.listen(PORT, '0.0.0.0', function () {
   console.log("Listening on port " + PORT);
   // process.env.NODE_ENV='test'
   if (process.env.NODE_ENV==='test') {
